@@ -23,10 +23,10 @@ class TwitterClient(object):
 		Class constructor or initialization method. 
 		'''
 		# keys and tokens from the Twitter Dev Console 
-		consumer_key = 'dZ6H7ccLUv6JvXtc0bZJzdfmr'
-		consumer_secret = 'sQ8OMESFHVXWjZAJgKhun9AO08ysYpREaNCnmDmPyMMXC7ZoqQ'
-		access_token = '869122786274541568-LhBEPz2HbKYEYAk6MB8SpOz0HOVk2jF'
-		access_token_secret = 'k4mWyIhbAbkagpGOdR1wOe8Qs3R8WOfAqEOtG8JM5nMm6'
+		consumer_key = 'dZ6H7ccLUvXZJzd'
+		consumer_secret = 'sQ8OMESFHjZAJgKhun9AO08yMMXC7ZoqQ'
+		access_token = '8691227862748-LhBEPzB8SpOz0HOVk2jF'
+		access_token_secret = 'k4mWyIhbAbkagpGtG8JM5nMm6'
 
 		# attempt authentication 
 		try: 
@@ -141,7 +141,7 @@ def email1():
                       server = smtplib.SMTP('smtp.gmail.com', 587)
                       server.ehlo()
                       server.starttls()
-                      #server.login("aditya28071999@gmail.com", 'aditya28')
+                      #server.login("", '')
                       server.login("aditya28071999@gmail.com", 'password')
                       server.sendmail('aditya28071999@gmail.com', "pandit28071999@gmail.com", content)
                       server.close()
